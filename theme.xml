@@ -268,12 +268,18 @@ https://github.com/anthonycaccese/p-10-menu-es
                   <pos>0 0</pos>
                   <size>0.8 1</size>
                   <text>startswith({system:fullName}, "now-playing") ? "Now Playing" : 
-                     startswith({system:fullName}, "last played") ? "Last Played" : 
-                     startswith({system:fullName}, "all games") ? "All Games" : 
-                     startswith({system:fullName}, "favorites") ? "Favorites" : 
-                     startswith({system:fullName}, "Super Nintendo Entertainment System") ? "Super Nintendo" : 
-                     startswith({system:fullName}, "Nintendo Entertainment System") ? "NES" : 
-                     {system:fullName}</text>
+            startswith({system:fullName}, "last played") ? "Last Played" : 
+            startswith({system:fullName}, "all games") ? "All Games" : 
+            startswith({system:fullName}, "favorites") ? "Favorites" : 
+            startswith({system:fullName}, "3DO Interactive") ? "3DO" : 
+            startswith({system:fullName}, "Mega Duck") ? "Megaduck" : 
+            startswith({system:fullName}, "Nintendo 64 Disk Drive") ? "Nintendo 64DD" : 
+            startswith({system:fullName}, "Nintendo Entertainment System") ? "NES" : 
+            startswith({system:fullName}, "Playstation Portable") ? "PSP" : 
+            startswith({system:fullName}, "Plug and Play") ? "Plug &amp; Play" : 
+            startswith({system:fullName}, "Super Nintendo Entertainment System") ? "Super Nintendo" : 
+            startswith({system:fullName}, "Video Game Music Player") ? "VGM" : 
+            {system:fullName}</text>
                   <fontPath>${textlistFont}</fontPath>
                   <fontSize>0.02916667</fontSize><!-- 14 -->
                   <color>${textlistPrimaryColor}</color>
@@ -335,8 +341,14 @@ https://github.com/anthonycaccese/p-10-menu-es
             startswith({system:fullName}, "last played") ? "Last Played" : 
             startswith({system:fullName}, "all games") ? "All Games" : 
             startswith({system:fullName}, "favorites") ? "Favorites" : 
-            startswith({system:fullName}, "Super Nintendo Entertainment System") ? "Super Nintendo" : 
+            startswith({system:fullName}, "3DO Interactive") ? "3DO" : 
+            startswith({system:fullName}, "Mega Duck") ? "Megaduck" : 
+            startswith({system:fullName}, "Nintendo 64 Disk Drive") ? "Nintendo 64DD" : 
             startswith({system:fullName}, "Nintendo Entertainment System") ? "NES" : 
+            startswith({system:fullName}, "Playstation Portable") ? "PSP" : 
+            startswith({system:fullName}, "Plug and Play") ? "Plug &amp; Play" : 
+            startswith({system:fullName}, "Super Nintendo Entertainment System") ? "Super Nintendo" : 
+            startswith({system:fullName}, "Video Game Music Player") ? "VGM" : 
             {system:fullName}</text>
       </text>
       <textlist name="gamelist">
@@ -396,16 +408,25 @@ https://github.com/anthonycaccese/p-10-menu-es
          <color>${textlistBackgroundColor}</color>
          <zIndex>9</zIndex>
       </image>
-      <video name="game-art" extra="true">
+      <image name="game-artwork" extra="true">
          <origin>0.5 0.5</origin>
-         <imageType>cover</imageType>
-         <iterationCount>1</iterationCount>
-         <onIterationsDone>image</onIterationsDone>
-         <imageCornerRadius>0.008</imageCornerRadius>
-         <videoCornerRadius>0.008</videoCornerRadius>
-         <pillarboxes>false</pillarboxes>
-         <delay>3</delay>
+         <path ifSubset="gamelist-view-artwork:image">{game:image}</path>
+         <path ifSubset="gamelist-view-artwork:boxart">{game:thumbnail}</path>
+         <path ifSubset="gamelist-view-artwork:logo">{game:marquee}</path>
+         <roundCorners>0.02</roundCorners>
+         <autoFade>false</autoFade>
          <zIndex>10</zIndex>
+      </image>
+      <video name="game-video" extra="true">
+         <origin>0.5 0.5</origin>
+         <path>{game:video}</path><delay>2</delay>
+         <effect>none</effect>
+         <loops>0</loops>
+         <roundCorners ifSubset="gamelist-view-artwork:boxart|image">0.02</roundCorners>
+         <zIndex>11</zIndex>
+         <storyboard>
+            <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+         </storyboard>
       </video>
    </view>
 

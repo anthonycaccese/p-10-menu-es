@@ -91,9 +91,13 @@ based on 480x480
          <pos>0.69791667 0.48125</pos><!-- 335 231 -->
          <size>0.4375 0.52916667</size><!-- 210 254 -->
       </image>
-      <video name="game-art" extra="true">
+      <image name="game-artwork" extra="true">
          <pos>0.71875 0.48125</pos><!-- 345 231 -->
          <maxSize>0.39583333 0.52916667</maxSize><!-- 190 254 -->
+      </image>
+      <video name="game-video" extra="true">
+         <pos>0.71875 0.48125</pos><!-- 345 231 -->
+         <minSize>0.39583333 0.52916667</minSize><!-- 190 254 -->
       </video>
    </view>
 

@@ -2,119 +2,141 @@
    <formatVersion>7</formatVersion>
    <variables ifSubset="color-scheme:playchoice|custom">
       <backgroundColor>000000</backgroundColor>
+      <!-- View Name -->
       <viewnameBorderColor>000000</viewnameBorderColor>
       <viewnameBackgroundColor>f10000</viewnameBackgroundColor>
       <viewnameTextColor>ffffff</viewnameTextColor>
+      <!-- Text List -->
       <textlistOuterBorderColor>ffffff</textlistOuterBorderColor>
       <textlistInnerBorderColor>156415</textlistInnerBorderColor>
       <textlistBackgroundColor>7a9f35</textlistBackgroundColor>
       <textlistSelectedColor>ffffff</textlistSelectedColor>
       <textlistSelectorColor>ffffff55</textlistSelectorColor>
       <textlistPrimaryColor>000000</textlistPrimaryColor>
-      <textlistSecondaryColor>000000</textlistSecondaryColor>
       <textlistBackgroundLinesColor>15641577</textlistBackgroundLinesColor>
-      <systemIndicatorColor>ffffffcc</systemIndicatorColor>
+      <!-- Help System -->
       <helpsystemOuterBorderColor>ffffff</helpsystemOuterBorderColor>
       <helpsystemInnerBorderColor>002d00</helpsystemInnerBorderColor>
       <helpsystemBackgroundColor>156415</helpsystemBackgroundColor>
       <helpsystemIconColor>fffe8f</helpsystemIconColor>
       <helpsystemTextColor>ffffff</helpsystemTextColor>
+      <!-- Menu -->
       <menuBackgroundColor>111111</menuBackgroundColor>
       <menuSelectorColor>444444</menuSelectorColor>
+      <!-- System Indicators -->
+      <systemIndicatorColor>ffffffcc</systemIndicatorColor>
    </variables>
    <variables ifSubset="color-scheme:light-blue">
       <backgroundColor>000000</backgroundColor>
+      <!-- View Name -->
       <viewnameBorderColor>032a4b</viewnameBorderColor>
       <viewnameBackgroundColor>EA3352</viewnameBackgroundColor>
       <viewnameTextColor>ffffff</viewnameTextColor>
+      <!-- Text List -->
       <textlistOuterBorderColor>ffffff</textlistOuterBorderColor>
       <textlistInnerBorderColor>021c32</textlistInnerBorderColor>
       <textlistBackgroundColor>56AAF8</textlistBackgroundColor>
       <textlistSelectedColor>ffffff</textlistSelectedColor>
       <textlistSelectorColor>ffffff66</textlistSelectorColor>
       <textlistPrimaryColor>032a4b</textlistPrimaryColor>
-      <textlistSecondaryColor>032a4b</textlistSecondaryColor>
       <textlistBackgroundLinesColor>032a4b44</textlistBackgroundLinesColor>
-      <systemIndicatorColor>ffffffcc</systemIndicatorColor>
+      <!-- Help System -->
       <helpsystemOuterBorderColor>ffffff</helpsystemOuterBorderColor>
       <helpsystemInnerBorderColor>000000</helpsystemInnerBorderColor>
       <helpsystemBackgroundColor>021c32</helpsystemBackgroundColor>
       <helpsystemIconColor>EA3352</helpsystemIconColor>
       <helpsystemTextColor>ffffff</helpsystemTextColor>
+      <!-- Menu -->
       <menuBackgroundColor>111111</menuBackgroundColor>
       <menuSelectorColor>444444</menuSelectorColor>
+      <!-- System Indicators -->
+      <systemIndicatorColor>ffffffcc</systemIndicatorColor>
    </variables>
    <variables ifSubset="color-scheme:capcom-purple">
       <backgroundColor>000000</backgroundColor>
+      <!-- View Name -->
       <viewnameBorderColor>1e0944</viewnameBorderColor>
       <viewnameBackgroundColor>FC060F</viewnameBackgroundColor>
       <viewnameTextColor>ffffff</viewnameTextColor>
+      <!-- Text List -->
       <textlistOuterBorderColor>f0e9fc</textlistOuterBorderColor>
       <textlistInnerBorderColor>3C1287</textlistInnerBorderColor>
       <textlistBackgroundColor>a278ed</textlistBackgroundColor>
       <textlistSelectedColor>ffffff</textlistSelectedColor>
       <textlistSelectorColor>ffffff55</textlistSelectorColor>
       <textlistPrimaryColor>1e0944</textlistPrimaryColor>
-      <textlistSecondaryColor>1e0944</textlistSecondaryColor>
       <textlistBackgroundLinesColor>3C128755</textlistBackgroundLinesColor>
-      <systemIndicatorColor>ffffffcc</systemIndicatorColor>
+      <!-- Help System -->
       <helpsystemOuterBorderColor>f0e9fc</helpsystemOuterBorderColor>
       <helpsystemInnerBorderColor>1e0944</helpsystemInnerBorderColor>
       <helpsystemBackgroundColor>3C1287</helpsystemBackgroundColor>
       <helpsystemIconColor>fd5258</helpsystemIconColor>
       <helpsystemTextColor>ffffff</helpsystemTextColor>
+      <!-- Menu -->
       <menuBackgroundColor>111111</menuBackgroundColor>
       <menuSelectorColor>444444</menuSelectorColor>
+      <!-- System Indicators -->
+      <systemIndicatorColor>ffffffcc</systemIndicatorColor>
    </variables>
    <variables ifSubset="color-scheme:dark-tan">
       <backgroundColor>000000</backgroundColor>
+      <!-- View Name -->
       <viewnameBorderColor>000000</viewnameBorderColor>
       <viewnameBackgroundColor>1c1a18</viewnameBackgroundColor>
       <viewnameTextColor>ffffff</viewnameTextColor>
+      <!-- Text List -->
       <textlistOuterBorderColor>ffffff</textlistOuterBorderColor>
       <textlistInnerBorderColor>1c1a18</textlistInnerBorderColor>
       <textlistBackgroundColor>5E5750</textlistBackgroundColor>
       <textlistSelectedColor>ffffff</textlistSelectedColor>
       <textlistSelectorColor>ffffff33</textlistSelectorColor>
       <textlistPrimaryColor>000000cc</textlistPrimaryColor>
-      <textlistSecondaryColor>000000cc</textlistSecondaryColor>
       <textlistBackgroundLinesColor>00000055</textlistBackgroundLinesColor>
-      <systemIndicatorColor>ffffff99</systemIndicatorColor>
+      <!-- Help System -->
       <helpsystemOuterBorderColor>ffffff</helpsystemOuterBorderColor>
       <helpsystemInnerBorderColor>5E5750</helpsystemInnerBorderColor>
       <helpsystemBackgroundColor>1c1a18</helpsystemBackgroundColor>
       <helpsystemIconColor>F2A73B</helpsystemIconColor>
       <helpsystemTextColor>ffffff</helpsystemTextColor>
+      <!-- Menu -->
       <menuBackgroundColor>111111</menuBackgroundColor>
       <menuSelectorColor>444444</menuSelectorColor>
+      <!-- System Indicators -->
+      <systemIndicatorColor>ffffff99</systemIndicatorColor>
    </variables>
    <variables ifSubset="color-scheme:oled">
       <backgroundColor>000000</backgroundColor>
+      <!-- View Name -->
       <viewnameBorderColor>000000</viewnameBorderColor>
       <viewnameBackgroundColor>000000</viewnameBackgroundColor>
       <viewnameTextColor>ffffff</viewnameTextColor>
+      <!-- Text List -->
       <textlistOuterBorderColor>000000</textlistOuterBorderColor>
       <textlistInnerBorderColor>000000</textlistInnerBorderColor>
       <textlistBackgroundColor>000000</textlistBackgroundColor>
       <textlistSelectedColor>ffffff</textlistSelectedColor>
       <textlistSelectorColor>00000000</textlistSelectorColor>
       <textlistPrimaryColor>444444</textlistPrimaryColor>
-      <textlistSecondaryColor>444444</textlistSecondaryColor>
       <textlistBackgroundLinesColor>222222</textlistBackgroundLinesColor>
-      <systemIndicatorColor>ffffff99</systemIndicatorColor>
+      <!-- Help System -->
       <helpsystemOuterBorderColor>000000</helpsystemOuterBorderColor>
       <helpsystemInnerBorderColor>000000</helpsystemInnerBorderColor>
       <helpsystemBackgroundColor>111111</helpsystemBackgroundColor>
       <helpsystemIconColor>aaaaaa</helpsystemIconColor>
       <helpsystemTextColor>ffffff</helpsystemTextColor>
+      <!-- Menu -->
       <menuBackgroundColor>111111</menuBackgroundColor>
       <menuSelectorColor>444444</menuSelectorColor>
+      <!-- System Indicators -->
+      <systemIndicatorColor>ffffff99</systemIndicatorColor>
    </variables>
    <variables ifSubset="color-scheme:light">
       <backgroundColor>dddddd</backgroundColor>
+      <!-- View Name -->
       <viewnameBorderColor>dddddd</viewnameBorderColor>
       <viewnameBackgroundColor>eeeeee</viewnameBackgroundColor>
       <viewnameTextColor>000000</viewnameTextColor>
+      <!-- Text List -->
       <textlistOuterBorderColor>dddddd</textlistOuterBorderColor>
       <textlistInnerBorderColor>dddddd</textlistInnerBorderColor>
       <textlistBackgroundColor>ffffff</textlistBackgroundColor>
@@ -123,13 +145,16 @@
       <textlistPrimaryColor>aaaaaa</textlistPrimaryColor>
       <textlistSecondaryColor>aaaaaa</textlistSecondaryColor>
       <textlistBackgroundLinesColor>cccccc</textlistBackgroundLinesColor>
-      <systemIndicatorColor>00000099</systemIndicatorColor>
+      <!-- Help System -->
       <helpsystemOuterBorderColor>dddddd</helpsystemOuterBorderColor>
       <helpsystemInnerBorderColor>dddddd</helpsystemInnerBorderColor>
       <helpsystemBackgroundColor>dddddd</helpsystemBackgroundColor>
       <helpsystemIconColor>aaaaaa</helpsystemIconColor>
       <helpsystemTextColor>000000</helpsystemTextColor>
+      <!-- Menu -->
       <menuBackgroundColor>111111</menuBackgroundColor>
       <menuSelectorColor>444444</menuSelectorColor>
+      <!-- System Indicators -->
+      <systemIndicatorColor>00000099</systemIndicatorColor>
    </variables>
 </theme>
