@@ -1,0 +1,100 @@
+<!-- 
+1:1 aspect ratio
+based on 480x480
+-->
+<theme>
+   <formatVersion>7</formatVersion>
+
+   <!--
+   ///
+   All Views
+   ///
+   -->
+   <view name="system,basic,detailed">
+      <!-- System Indicators -->
+      <stackpanel name="system-indicators" extra="true">
+         <w>0.8875</w><!-- 426 -->
+         <separator>10</separator>
+      </stackpanel>
+      <!-- Images -->
+      <image name="viewname-border" extra="true">
+         <path>./_inc/images/1-1/viewname-border.svg</path>
+      </image>
+      <image name="viewname-background" extra="true">
+         <path>./_inc/images/1-1/viewname-background.svg</path>
+      </image>
+      <image name="textlist-outer-border" extra="true">
+         <path>./_inc/images/1-1/textlist-outer-border.svg</path>
+      </image>
+      <image name="textlist-inner-border" extra="true">
+         <path>./_inc/images/1-1/textlist-inner-border.svg</path>
+      </image>
+      <image name="textlist-background" extra="true">
+         <path>./_inc/images/1-1/textlist-background.svg</path>
+      </image>
+      <image name="textlist-background-lines" extra="true">
+         <path>./_inc/images/1-1/textlist-background-lines.svg</path>
+      </image>
+      <image name="helpsystem-outer-border" extra="true">
+         <path>./_inc/images/1-1/helpsystem-outer-border.svg</path>
+      </image>
+      <image name="helpsystem-inner-border" extra="true">
+         <path>./_inc/images/1-1/helpsystem-inner-border.svg</path>
+      </image>
+      <image name="helpsystem-background" extra="true">
+         <path>./_inc/images/1-1/helpsystem-background.svg</path>
+      </image>
+      <!-- Text -->
+      <text name="viewname" extra="true">
+         <x>0.11666667</x><!-- 56 -->
+      </text>
+      <!-- Help -->
+      <helpsystem name="help">
+         <fontSize>0.01458333</fontSize><!-- 7 -->
+      </helpsystem>
+   </view>
+
+   <!--
+   ///
+   System View
+   ///
+   -->
+   <view name="system">
+      <textlist name="textlist">
+         <x>0.08333333</x><!-- 40 -->
+         <w>0.83333333</w><!-- 400 -->
+      </textlist>
+   </view>
+
+   <!--
+   ///
+   Gamelist View
+   ///
+   -->
+   <view name="basic,detailed">
+      <textlist name="gamelist">
+         <x>0.08333333</x><!-- 40 -->
+         <w>0.83333333</w><!-- 400 -->
+      </textlist>
+   </view>
+
+   <!--
+   ///
+   View: Gamelist (Game Artwork: Image, Boxart, Logo)
+   ///
+   -->
+   <view name="detailed" ifSubset="gamelist-view-artwork:image|boxart|logo">
+      <textlist name="gamelist">
+         <w>0.39583333</w><!-- 190 -->
+      </textlist>
+      <image name="game-art-background" extra="true">
+         <pos>0.69791667 0.48125</pos><!-- 335 231 -->
+         <size>0.4375 0.52916667</size><!-- 210 254 -->
+      </image>
+      <video name="game-art" extra="true">
+         <pos>0.71875 0.48125</pos><!-- 345 231 -->
+         <maxSize>0.39583333 0.52916667</maxSize><!-- 190 254 -->
+      </video>
+   </view>
+
+</theme>

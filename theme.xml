@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+theme name: P-10 Menu
+ported by:  Anthony Caccese
+license:    creative commons CC-BY-NC-SA
+https://github.com/anthonycaccese/p-10-menu-es
+-->
+<theme defaultTransition="instant">
+   <formatVersion>7</formatVersion>
+
+   <!--
+   ///
+   Subset: Distribution
+   ///
+   -->
+   <subset name="distribution" displayName="Distribution">
+      <include name="batocera" displayName="Batocera/Knulli" />
+      <include name="rocknix" displayName="RockNIX" />
+      <include name="retrobat" displayName="Retrobat" />
+   </subset>
+
+   <!--
+   ///
+   Variables
+   ///
+   -->
+   <variables>
+      <spacerImage>./_inc/images/space.png</spacerImage>
+      <textlistFont>./_inc/fonts/a-goblin-appears.otf</textlistFont>
+      <helpsystemFont>./_inc/fonts/a-goblin-appears.otf</helpsystemFont>
+      <systemIndicatorFont>./_inc/fonts/a-goblin-appears.otf</systemIndicatorFont>
+      <menuFontBold>./_inc/fonts/Roboto-Bold.ttf</menuFontBold>
+      <menuFontLight>./_inc/fonts/Roboto-Light.ttf</menuFontLight>
+      <menuFontRegular>./_inc/fonts/Roboto-Regular.ttf</menuFontRegular>
+      <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath><!-- RetroBat\emulationstation\.emulationstation\ -->
+      <distributionPath ifSubset="distribution:rocknix">~/roms/_userdata/</distributionPath>
+      <distributionPath ifSubset="distribution:batocera">/userdata/</distributionPath><!-- /userdata -->
+      <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
+   </variables>
+
+   <!--
+   ///
+   Subset: Aspect Ratio
+   ///
+   -->
+   <subset name="aspect-ratio" displayName="Aspect Ratio">
+      <include if="{screen.ratio} == '16/9'" name="16-9-auto" displayName="Automatic" />
+      <include if="{screen.ratio} == '16/10'" name="16-10-auto" displayName="Automatic" />
+      <include if="{screen.ratio} == '4/3'" name="4-3-auto" displayName="Automatic" />
+      <include if="{screen.ratio} == '3/2'" name="3-2-auto" displayName="Automatic" />
+      <include if="{screen.ratio} == '1/1'" name="1-1-auto" displayName="Automatic" />
+      <include name="16-9" displayName="16:9" />
+      <include name="16-10" displayName="16:10" />
+      <include name="4-3" displayName="4:3" />
+      <include name="3-2" displayName="3:2" />
+      <include name="1-1" displayName="1:1" />
+   </subset>
+
+   <!--
+   ///
+   Subset: Game Artwork
+   ///
+   -->
+   <subset name="gamelist-view-artwork" displayName="Game Artwork">
+      <include name="off" displayName="Off" />
+      <include name="image" displayName="Image" />
+      <include name="boxart" displayName="Boxart" />
+      <include name="logo" displayName="Logo" />
+   </subset>
+
+   <!--
+   ///
+   Subset: Color Scheme
+   ///
+   -->
+   <subset name="color-scheme" displayName="Color Scheme">
+      <include name="playchoice" displayName="Playchoice" />
+      <include name="light-blue" displayName="Light Blue" />
+      <include name="capcom-purple" displayName="Capcom Purple" />
+      <include name="dark-tan" displayName="Dark Tan" />
+      <include name="oled" displayName="OLED" />
+      <include name="light" displayName="Light" />
+      <include name="custom" displayName="Custom" />
+   </subset>
+   <include>./colors.xml</include>
+   <include ifSubset="color-scheme:custom">${themeCustomizationsPath}colors.xml</include>
+
+   <!--
+   ///
+   View: Screen
+   ///
+   -->
+   <view name="screen">
+      <!-- Start: Resets -->
+      <controllerActivity name="controllerActivity">
+         <visible>false</visible>
+      </controllerActivity>
+      <batteryIndicator name="batteryIndicator">
+         <visible>false</visible>
+      </batteryIndicator>
+      <text name="clock">
+         <pos>1 1</pos>
+      </text>
+      <!-- End: Resets -->
+   </view>
+
+   <!--
+   ///
+   All Views
+   ///
+   -->
+   <view name="system,basic,detailed">
+      <!-- System Indicators -->
+      <stackpanel name="system-indicators" extra="true">
+         <h>0.04166667</h><!-- 20 -->
+         <pos>0 0.09583333</pos><!-- 45 -->
+         <orientation>horizontal</orientation>
+         <reverse>true</reverse>
+         <batteryText name="system-battery-text">
+            <color>${systemIndicatorColor}</color>
+            <fontPath>${systemIndicatorFont}</fontPath>
+            <fontSize>0.02083333</fontSize><!-- 10 -->
+            <lineSpacing>1</lineSpacing>
+         </batteryText>
+         <batteryIcon name="system-battery-icon">
+            <maxSize>1 1</maxSize>
+            <color>${systemIndicatorColor}</color>
+            <full>./_inc/images/battery-icon-100.svg</full>
+            <at75>./_inc/images/battery-icon-75.svg</at75>
+            <at50>./_inc/images/battery-icon-50.svg</at50>
+            <at25>./_inc/images/battery-icon-25.svg</at25>
+            <empty>./_inc/images/battery-icon-0.svg</empty>
+            <incharge>./_inc/images/battery-icon-charging.svg</incharge>
+         </batteryIcon>
+         <networkIcon name="system-network-icon">
+            <maxSize>1 1</maxSize>
+            <color>${systemIndicatorColor}</color>
+            <networkIcon>./_inc/images/network-icon-on.svg</networkIcon>
+            <planemodeIcon>./_inc/images/network-icon-off.svg</planemodeIcon>
+         </networkIcon>
+      </stackpanel>
+      <!-- Images -->
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>${spacerImage}</path>
+         <color>${backgroundColor}</color>
+         <zIndex>0</zIndex>
+      </image>
+      <image name="viewname-border" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <color>${viewnameBorderColor}</color>
+         <zIndex>4</zIndex>
+      </image>
+      <image name="viewname-background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <color>${viewnameBackgroundColor}</color>
+         <zIndex>5</zIndex>
+      </image>
+      <image name="textlist-outer-border" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <color>${textlistOuterBorderColor}</color>
+         <zIndex>1</zIndex>
+      </image>
+      <image name="textlist-inner-border" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <color>${textlistInnerBorderColor}</color>
+         <zIndex>2</zIndex>
+      </image>
+      <image name="textlist-background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <color>${textlistBackgroundColor}</color>
+         <zIndex>3</zIndex>
+      </image>
+      <image name="textlist-background-lines" extra="true">
+         <origin>0 0</origin>
+         <pos>0 .009</pos>
+         <size>1 1</size>
+         <color>${textlistBackgroundLinesColor}</color>
+         <zIndex>4</zIndex>
+      </image>
+      <image name="helpsystem-outer-border" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <color>${helpsystemOuterBorderColor}</color>
+         <zIndex>1</zIndex>
+      </image>
+      <image name="helpsystem-inner-border" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <color>${helpsystemInnerBorderColor}</color>
+         <zIndex>2</zIndex>
+      </image>
+      <image name="helpsystem-background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <color>${helpsystemBackgroundColor}</color>
+         <zIndex>3</zIndex>
+      </image>
+      <!-- Text -->
+      <text name="viewname" extra="true">
+         <origin>0 0.5</origin>
+         <y>0.11875</y><!-- 57 -->
+         <fontSize>0.025</fontSize><!-- 12 -->
+         <fontPath>${textlistFont}</fontPath>
+         <color>${viewnameTextColor}</color>
+         <zIndex>10</zIndex>
+      </text>
+      <!-- Help -->
+      <helpsystem name="help">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.915</pos>
+         <fontPath>${helpsystemFont}</fontPath>
+         <textColor>${helpsystemTextColor}</textColor>
+         <iconColor>${helpsystemIconColor}</iconColor>
+         <iconUpDown>./_inc/images/help-button-dpad-up-down.svg</iconUpDown>
+         <iconLeftRight>./_inc/images/help-button-dpad-left-right.svg</iconLeftRight>
+         <iconUpDownLeftRight>./_inc/images/help-button-dpad.svg</iconUpDownLeftRight>
+         <iconA>./_inc/images/help-button-east.svg</iconA>
+         <iconB>./_inc/images/help-button-south.svg</iconB>
+         <iconX>./_inc/images/help-button-north.svg</iconX>
+         <iconY>./_inc/images/help-button-west.svg</iconY>
+         <iconL>./_inc/images/help-button-l.svg</iconL>
+         <iconR>./_inc/images/help-button-r.svg</iconR>
+         <iconStart>./_inc/images/help-button-start.svg</iconStart>
+         <iconSelect>./_inc/images/help-button-back.svg</iconSelect>
+      </helpsystem>
+   </view>
+
+   <!--
+   ///
+   System View
+   ///
+   -->
+   <view name="system">
+      <!-- Start: Resets -->
+      <text name="systemInfo,logoText">
+         <visible>false</visible>
+         <color>00000000</color>
+      </text>
+      <!-- End: Resets -->
+      <text name="viewname" extra="true">
+         <text>Systems</text>
+      </text>
+      <textlist name="textlist">
+         <y>0.22</y>
+         <h>0.525</h>
+         <lines>9</lines>
+         <zIndex>10</zIndex>
+         <itemTemplate>
+            <container>
+               <padding>20 0</padding>
+               <text name="system-name">
+                  <pos>0 0</pos>
+                  <size>0.8 1</size>
+                  <text>startswith({system:fullName}, "now-playing") ? "Now Playing" : 
+                     startswith({system:fullName}, "last played") ? "Last Played" : 
+                     startswith({system:fullName}, "all games") ? "All Games" : 
+                     startswith({system:fullName}, "favorites") ? "Favorites" : 
+                     startswith({system:fullName}, "Super Nintendo Entertainment System") ? "Super Nintendo" : 
+                     startswith({system:fullName}, "Nintendo Entertainment System") ? "NES" : 
+                     {system:fullName}</text>
+                  <fontPath>${textlistFont}</fontPath>
+                  <fontSize>0.02916667</fontSize><!-- 14 -->
+                  <color>${textlistPrimaryColor}</color>
+                  <verticalAlignment>center</verticalAlignment>
+                  <alignment>left</alignment>
+                  <multiLine>false</multiLine>
+                  <storyboard event="activate">
+                     <animation property="color" to="${textlistSelectedColor}"/>
+                     <animation property="singleLineScroll" to="true"/>
+                  </storyboard>
+                  <storyboard event="deactivate">
+                     <animation property="color" to="${textlistPrimaryColor}"/>
+                     <animation property="singleLineScroll" to="false"/>
+                  </storyboard>
+               </text>
+               <text name="system-release-year">
+                  <pos>0.8 0</pos>
+                  <size>0.2 1</size>
+                  <text>{system:releaseYear}</text>
+                  <fontPath>${textlistFont}</fontPath>
+                  <fontSize>0.025</fontSize><!-- 12 -->
+                  <color>${textlistPrimaryColor}</color>
+                  <verticalAlignment>center</verticalAlignment>
+                  <alignment>right</alignment>
+                  <multiLine>false</multiLine>
+                  <storyboard event="activate">
+                     <animation property="color" to="${textlistSelectedColor}"/>
+                  </storyboard>
+                  <storyboard event="deactivate">
+                     <animation property="color" to="${textlistPrimaryColor}"/>
+                  </storyboard>
+               </text>
+            </container>
+            <image name="selector">
+               <origin>0 1</origin>
+               <pos>0 0.96</pos>
+               <size>1 0.05</size>
+               <path>${spacerImage}</path>
+               <color>transparent</color>          
+               <storyboard event="activate">
+                  <animation property="color" to="${textlistSelectorColor}"/>
+               </storyboard>
+               <storyboard event="deactivate">
+                  <animation property="color" to="transparent"/>
+               </storyboard>
+            </image>
+         </itemTemplate>
+      </textlist>
+   </view>
+
+   <!--
+   ///
+   Gamelist View
+   ///
+   -->
+   <view name="basic,detailed">
+      <text name="viewname" extra="true">
+         <text>startswith({system:fullName}, "now-playing") ? "Now Playing" : 
+            startswith({system:fullName}, "last played") ? "Last Played" : 
+            startswith({system:fullName}, "all games") ? "All Games" : 
+            startswith({system:fullName}, "favorites") ? "Favorites" : 
+            startswith({system:fullName}, "Super Nintendo Entertainment System") ? "Super Nintendo" : 
+            startswith({system:fullName}, "Nintendo Entertainment System") ? "NES" : 
+            {system:fullName}</text>
+      </text>
+      <textlist name="gamelist">
+         <y>0.22</y>
+         <h>0.525</h>
+         <lines>9</lines>
+         <zIndex>10</zIndex>
+         <itemTemplate>
+            <container>
+               <padding>20 0</padding>
+               <text name="game-name">
+                  <pos>0 0</pos>
+                  <size>1 1</size>
+                  <text>{game:name}</text>
+                  <fontPath>${textlistFont}</fontPath>
+                  <fontSize>0.02916667</fontSize><!-- 14 -->
+                  <color>${textlistPrimaryColor}</color>
+                  <verticalAlignment>center</verticalAlignment>
+                  <alignment>left</alignment>
+                  <multiLine>false</multiLine>
+                  <storyboard event="activate">
+                     <animation property="color" to="${textlistSelectedColor}"/>
+                     <animation property="singleLineScroll" to="true"/>
+                  </storyboard>
+                  <storyboard event="deactivate">
+                     <animation property="color" to="${textlistPrimaryColor}"/>
+                     <animation property="singleLineScroll" to="false"/>
+                  </storyboard>
+               </text>
+            </container>
+            <image name="selector">
+               <origin>0 1</origin>
+               <pos>0 0.96</pos>
+               <size>1 0.05</size>
+               <path>${spacerImage}</path>
+               <color>transparent</color>          
+               <storyboard event="activate">
+                  <animation property="color" to="${textlistSelectorColor}"/>
+               </storyboard>
+               <storyboard event="deactivate">
+                  <animation property="color" to="transparent"/>
+               </storyboard>
+            </image>
+         </itemTemplate>
+      </textlist>
+   </view>
+
+   <!--
+   ///
+   View: Gamelist (Game Artwork: Image, Boxart, Logo)
+   ///
+   -->
+   <view name="detailed" ifSubset="gamelist-view-artwork:image|boxart|logo">
+      <image name="game-art-background" extra="true">
+         <origin>0.5 0.5</origin>
+         <path>${spacerImage}</path>
+         <color>${textlistBackgroundColor}</color>
+         <zIndex>9</zIndex>
+      </image>
+      <video name="game-art" extra="true">
+         <origin>0.5 0.5</origin>
+         <imageType>cover</imageType>
+         <iterationCount>1</iterationCount>
+         <onIterationsDone>image</onIterationsDone>
+         <imageCornerRadius>0.008</imageCornerRadius>
+         <videoCornerRadius>0.008</videoCornerRadius>
+         <pillarboxes>false</pillarboxes>
+         <delay>3</delay>
+         <zIndex>10</zIndex>
+      </video>
+   </view>
+
+   <!--
+   ///
+   View: Menu
+   ///
+   -->
+   <view name="menu">
+      <menuText name="menutitle">
+         <fontPath>${menuFontBold}</fontPath>
+         <fontSize>0.03333333</fontSize><!-- 16 -->
+         <color>ffffff</color>
+      </menuText>
+      <menuText name="menufooter">
+         <fontPath>${menuFontLight}</fontPath>
+         <fontSize>0.02916667</fontSize><!-- 14 -->
+         <color>ffffff77</color>
+      </menuText>
+      <menuText name="menutext">
+         <fontPath>${menuFontBold}</fontPath>
+         <fontSize>0.0375</fontSize><!-- 18 -->
+         <color>ffffff77</color>
+         <separatorColor>00000000</separatorColor>
+         <selectedColor>ffffff</selectedColor>
+         <selectorColor>${menuSelectorColor}</selectorColor>
+      </menuText>
+      <menuTextSmall name="menutextsmall">
+         <fontPath>${menuFontBold}</fontPath>
+         <fontSize>0.02916667</fontSize><!-- 14 -->
+         <color>ffffff77</color>
+      </menuTextSmall>
+      <menuGroup name="menugroup">
+         <fontPath>${menuFontRegular}</fontPath>
+         <fontSize>0.0375</fontSize><!-- 18 -->
+         <color>ffffff</color>
+         <separatorColor>ffffff99</separatorColor>
+         <backgroundColor>00000000</backgroundColor>
+         <lineSpacing>2</lineSpacing>
+      </menuGroup>
+      <menuTextEdit name="menutextedit">
+         <inactive>./_inc/images/menu-textinput.png</inactive>
+         <active>./_inc/images/menu-textinput-active.png</active>
+      </menuTextEdit>
+      <menuBackground name="menubg">
+         <color>${menuBackgroundColor}</color>
+         <cornerSize>20 20</cornerSize>
+      </menuBackground>
+      <menuIcons name="menuicons">
+         <iconSystem>./_inc/images/menu-icon-system.svg</iconSystem>
+         <iconUpdates>./_inc/images/menu-icon-update.svg</iconUpdates>
+         <iconControllers>./_inc/images/menu-icon-controller.svg</iconControllers>
+         <iconGames>./_inc/images/menu-icon-games.svg</iconGames>
+         <iconUI>./_inc/images/menu-icon-ui.svg</iconUI>
+         <iconSound>./_inc/images/menu-icon-sound.svg</iconSound>
+         <iconNetwork>./_inc/images/menu-icon-network.svg</iconNetwork>
+         <iconScraper>./_inc/images/menu-icon-scraper.svg</iconScraper>
+         <iconAdvanced>./_inc/images/menu-icon-advanced.svg</iconAdvanced>
+         <iconQuit>./_inc/images/menu-icon-quit.svg</iconQuit>
+         <iconRetroachievements>./_inc/images/menu-icon-achievements.svg</iconRetroachievements>
+         <iconKodi>./_inc/images/menu-icon-kodi.svg</iconKodi>
+         <iconRestart>./_inc/images/menu-icon-restart.svg</iconRestart>
+         <iconShutdown>./_inc/images/menu-icon-shutdown.svg</iconShutdown>
+         <iconFastShutdown>./_inc/images/menu-icon-shutdown.svg</iconFastShutdown>
+      </menuIcons>
+   </view>
+
+   <!--
+   ///
+   Include: Aspect Ratios
+   ///
+   -->
+   <include ifSubset="aspect-ratio:16-9|16-9-auto">./aspect-ratio-16-9.xml</include>
+   <include ifSubset="aspect-ratio:4-3|4-3-auto">./aspect-ratio-4-3.xml</include>
+   <include ifSubset="aspect-ratio:16-10|16-10-auto">./aspect-ratio-16-10.xml</include>
+   <include ifSubset="aspect-ratio:1-1|1-1-auto">./aspect-ratio-1-1.xml</include>
+   <include ifSubset="aspect-ratio:3-2|3-2-auto">./aspect-ratio-3-2.xml</include>
+
+</theme>

@@ -1,0 +1,22 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables>
+      <backgroundColor>000000</backgroundColor>
+      <viewnameBorderColor>000000</viewnameBorderColor>
+      <viewnameBackgroundColor>f10000</viewnameBackgroundColor>
+      <viewnameTextColor>ffffff</viewnameTextColor>
+      <textlistOuterBorderColor>ffffff</textlistOuterBorderColor>
+      <textlistInnerBorderColor>156415</textlistInnerBorderColor>
+      <textlistBackgroundColor>7a9f35</textlistBackgroundColor>
+      <textlistSelectedColor>ffffff</textlistSelectedColor>
+      <textlistSelectorColor>ffffff55</textlistSelectorColor>
+      <textlistPrimaryColor>000000</textlistPrimaryColor>
+      <textlistSecondaryColor>000000</textlistSecondaryColor>
+      <textlistBackgroundLinesColor>15641577</textlistBackgroundLinesColor>
+      <helpsystemOuterBorderColor>ffffff</helpsystemOuterBorderColor>
+      <helpsystemInnerBorderColor>002d00</helpsystemInnerBorderColor>
+      <helpsystemBackgroundColor>156415</helpsystemBackgroundColor>
+      <helpsystemIconColor>fffe8f</helpsystemIconColor>
+      <helpsystemTextColor>ffffff</helpsystemTextColor>
+   </variables>
+</theme>
