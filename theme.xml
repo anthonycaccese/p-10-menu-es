@@ -45,12 +45,10 @@ https://github.com/anthonycaccese/p-10-menu-es
    -->
    <subset name="aspect-ratio" displayName="Aspect Ratio">
       <include if="{screen.ratio} == '16/9'" name="16-9-auto" displayName="Automatic" />
-      <include if="{screen.ratio} == '16/10'" name="16-10-auto" displayName="Automatic" />
       <include if="{screen.ratio} == '4/3'" name="4-3-auto" displayName="Automatic" />
       <include if="{screen.ratio} == '3/2'" name="3-2-auto" displayName="Automatic" />
       <include if="{screen.ratio} == '1/1'" name="1-1-auto" displayName="Automatic" />
       <include name="16-9" displayName="16:9" />
-      <include name="16-10" displayName="16:10" />
       <include name="4-3" displayName="4:3" />
       <include name="3-2" displayName="3:2" />
       <include name="1-1" displayName="1:1" />
@@ -501,7 +499,6 @@ https://github.com/anthonycaccese/p-10-menu-es
    -->
    <include ifSubset="aspect-ratio:16-9|16-9-auto">./aspect-ratio-16-9.xml</include>
    <include ifSubset="aspect-ratio:4-3|4-3-auto">./aspect-ratio-4-3.xml</include>
-   <include ifSubset="aspect-ratio:16-10|16-10-auto">./aspect-ratio-16-10.xml</include>
    <include ifSubset="aspect-ratio:1-1|1-1-auto">./aspect-ratio-1-1.xml</include>
    <include ifSubset="aspect-ratio:3-2|3-2-auto">./aspect-ratio-3-2.xml</include>
 

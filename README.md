@@ -40,7 +40,6 @@ Sets the aspect ratio to match your display. This should happen automatically bu
 Options:
 - `Automatic`
 - `16:9`
-- `16:10`
 - `4:3`
 - `1:1`
 - `3:2`
