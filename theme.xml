@@ -222,7 +222,6 @@ https://github.com/anthonycaccese/p-10-menu-es
       <helpsystem name="help">
          <origin>0.5 0.5</origin>
          <pos>0.5 0.915</pos>
-         <fontPath>${helpsystemFont}</fontPath>
          <textColor>${helpsystemTextColor}</textColor>
          <iconColor>${helpsystemIconColor}</iconColor>
          <iconUpDown>./_inc/images/help-button-dpad-up-down.svg</iconUpDown>

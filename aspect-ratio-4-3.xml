@@ -50,7 +50,7 @@ based on 640x480
       </text>
       <!-- Help -->
       <helpsystem name="help">
-         <fontSize>0.01666667</fontSize><!-- 8 -->
+         <fontSize>0.03125</fontSize><!-- 15 -->
       </helpsystem>
    </view>
 
