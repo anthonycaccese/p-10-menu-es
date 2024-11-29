@@ -436,17 +436,17 @@ https://github.com/anthonycaccese/p-10-menu-es
    <view name="menu">
       <menuText name="menutitle">
          <fontPath>${menuFontBold}</fontPath>
-         <fontSize>0.03333333</fontSize><!-- 16 -->
+         <fontSize>0.03125</fontSize><!-- 15 -->
          <color>ffffff</color>
       </menuText>
       <menuText name="menufooter">
          <fontPath>${menuFontLight}</fontPath>
-         <fontSize>0.02916667</fontSize><!-- 14 -->
+         <fontSize>0.02708333</fontSize><!-- 13 -->
          <color>ffffff77</color>
       </menuText>
       <menuText name="menutext">
          <fontPath>${menuFontBold}</fontPath>
-         <fontSize>0.0375</fontSize><!-- 18 -->
+         <fontSize>0.03541667</fontSize><!-- 17 -->
          <color>ffffff77</color>
          <separatorColor>00000000</separatorColor>
          <selectedColor>ffffff</selectedColor>
@@ -454,12 +454,12 @@ https://github.com/anthonycaccese/p-10-menu-es
       </menuText>
       <menuTextSmall name="menutextsmall">
          <fontPath>${menuFontBold}</fontPath>
-         <fontSize>0.02916667</fontSize><!-- 14 -->
+         <fontSize>0.02708333</fontSize><!-- 13 -->
          <color>ffffff77</color>
       </menuTextSmall>
       <menuGroup name="menugroup">
          <fontPath>${menuFontRegular}</fontPath>
-         <fontSize>0.0375</fontSize><!-- 18 -->
+         <fontSize>0.03541667</fontSize><!-- 17 -->
          <color>ffffff</color>
          <separatorColor>ffffff99</separatorColor>
          <backgroundColor>00000000</backgroundColor>
