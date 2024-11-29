@@ -18,7 +18,7 @@ The original version of the UI can be found as part of the Playchoice-10 arcade 
 
 ## **Preview**
 
-![Preview](https://github.com/user-attachments/assets/111926a1-2ff1-4fb8-b184-b8f975000d8a)
+![Preview](https://github.com/user-attachments/assets/3eee1c23-cf70-42e9-b3d2-d851e7b4b311)
 
 ## **Configuration Options**
 
@@ -56,7 +56,7 @@ Options:
 
 | Off | Image |
 |----|----|
-| ![Game Artwork Off](https://github.com/user-attachments/assets/d6538d34-8f87-4a9b-b7ac-3dd60f57edd1) | ![Game Artwork Image](https://github.com/user-attachments/assets/d2b27ac6-7fa4-4009-8aa3-1060ba0873ad) |
+| ![Game Artwork Off](https://github.com/user-attachments/assets/d22089b3-9f37-487c-bfec-e542ed2ca535) | ![Game Artwork Image](https://github.com/user-attachments/assets/319454f6-fde1-4996-a5fc-4ff2de3c3d30) |
 
 ### **Color Scheme:**
 
@@ -64,11 +64,11 @@ Sets the color scheme that is used for the overall theme on all views.
  
 | Playchoice | Light Blue | Capcom Purple |
 |----|----|----|
-| ![Playchoice](https://github.com/user-attachments/assets/111926a1-2ff1-4fb8-b184-b8f975000d8a) | ![Light Blue](https://github.com/user-attachments/assets/1ccef710-6178-43b6-9d8e-9769cb82240b) | ![Capcom Purple](https://github.com/user-attachments/assets/57f4d03e-36c5-4e27-9c14-780d97c56e7e) |
+| ![Playchoice](https://github.com/user-attachments/assets/3eee1c23-cf70-42e9-b3d2-d851e7b4b311) | ![Light Blue](https://github.com/user-attachments/assets/33353d7c-b197-4697-8293-29f6ed02ff1c) | ![Capcom Purple](https://github.com/user-attachments/assets/6343d6f9-60e5-4bf5-92be-b7751280dbd4) |
 
 | Dark Tan | OLED | Light |
 |----|----|----|
-| ![Dark Tan](https://github.com/user-attachments/assets/8f577b07-fbca-4f6a-81a0-524aa95e8cff) | ![OLED](https://github.com/user-attachments/assets/f316036e-95f9-4586-b163-3409355f7732) | ![Light](https://github.com/user-attachments/assets/33fe0d65-a959-44f1-ab73-53d5b69bc804) |
+| ![Dark Tan](https://github.com/user-attachments/assets/e26730ad-5db8-4a81-9da9-14232c31a85a) | ![OLED](https://github.com/user-attachments/assets/da12e5fd-54be-4678-8edf-6689452a4300) | ![Light](https://github.com/user-attachments/assets/7cb0862a-91cd-486a-8672-31c8513f62e8) |
 
 You can also create your own custom color scheme by following the instructions under "[Creating your own color scheme](#creating-your-own-color-scheme)"
  
