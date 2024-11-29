@@ -35,7 +35,7 @@ https://github.com/anthonycaccese/p-10-menu-es
       <distributionPath ifSubset="distribution:retrobat">~/.emulationstation/</distributionPath><!-- RetroBat\emulationstation\.emulationstation\ -->
       <distributionPath ifSubset="distribution:rocknix">~/roms/_userdata/</distributionPath>
       <distributionPath ifSubset="distribution:batocera">/userdata/</distributionPath><!-- /userdata -->
-      <themeCustomizationsPath>${distributionPath}theme-customizations/art-book-next/</themeCustomizationsPath>
+      <themeCustomizationsPath>${distributionPath}theme-customizations/p-10-menu/</themeCustomizationsPath>
    </variables>
 
    <!--
