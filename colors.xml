@@ -24,7 +24,7 @@
       <menuBackgroundColor>111111</menuBackgroundColor>
       <menuSelectorColor>444444</menuSelectorColor>
       <!-- System Indicators -->
-      <systemIndicatorColor>ffffffcc</systemIndicatorColor>
+      <systemIndicatorColor>ffffffee</systemIndicatorColor>
    </variables>
    <variables ifSubset="color-scheme:light-blue">
       <backgroundColor>000000</backgroundColor>
@@ -50,7 +50,7 @@
       <menuBackgroundColor>111111</menuBackgroundColor>
       <menuSelectorColor>444444</menuSelectorColor>
       <!-- System Indicators -->
-      <systemIndicatorColor>ffffffcc</systemIndicatorColor>
+      <systemIndicatorColor>ffffffee</systemIndicatorColor>
    </variables>
    <variables ifSubset="color-scheme:capcom-purple">
       <backgroundColor>000000</backgroundColor>
@@ -76,7 +76,7 @@
       <menuBackgroundColor>111111</menuBackgroundColor>
       <menuSelectorColor>444444</menuSelectorColor>
       <!-- System Indicators -->
-      <systemIndicatorColor>ffffffcc</systemIndicatorColor>
+      <systemIndicatorColor>ffffffee</systemIndicatorColor>
    </variables>
    <variables ifSubset="color-scheme:dark-tan">
       <backgroundColor>000000</backgroundColor>
@@ -108,7 +108,7 @@
       <backgroundColor>000000</backgroundColor>
       <!-- View Name -->
       <viewnameBorderColor>000000</viewnameBorderColor>
-      <viewnameBackgroundColor>000000</viewnameBackgroundColor>
+      <viewnameBackgroundColor>111111</viewnameBackgroundColor>
       <viewnameTextColor>ffffff</viewnameTextColor>
       <!-- Text List -->
       <textlistOuterBorderColor>000000</textlistOuterBorderColor>
@@ -121,7 +121,7 @@
       <!-- Help System -->
       <helpsystemOuterBorderColor>000000</helpsystemOuterBorderColor>
       <helpsystemInnerBorderColor>000000</helpsystemInnerBorderColor>
-      <helpsystemBackgroundColor>111111</helpsystemBackgroundColor>
+      <helpsystemBackgroundColor>000000</helpsystemBackgroundColor>
       <helpsystemIconColor>aaaaaa</helpsystemIconColor>
       <helpsystemTextColor>ffffff</helpsystemTextColor>
       <!-- Menu -->

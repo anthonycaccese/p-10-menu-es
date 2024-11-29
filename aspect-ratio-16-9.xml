@@ -3,13 +3,20 @@
 based on 853x480
 -->
 <theme>
+   <formatVersion>7</formatVersion>
 
    <!--
    ///
    All Views
    ///
    -->
-   <view name="system,gamelist">
+   <view name="system,basic,detailed">
+      <!-- System Indicators -->
+      <stackpanel name="system-indicators" extra="true">
+         <w>0.9003517</w><!-- 768 -->
+         <separator>0.01172333</separator>
+      </stackpanel>
+      <!-- Images -->
       <image name="textlist-outer-border">
          <path>./_inc/images/16-9/textlist-outer-border.svg</path>
       </image>
@@ -28,19 +35,6 @@ based on 853x480
       <image name="viewname-background">
          <path>./_inc/images/16-9/viewname-background.svg</path>
       </image>
-      <text name="viewname">
-         <pos>0.5 0.11875</pos><!-- 50% 57 -->
-         <fontSize>0.025</fontSize><!-- 12 -->
-      </text>
-      <textlist name="textlist">
-         <pos>0.04689332 0.225</pos><!-- 40 108 -->
-         <size>0.90621336 0.525</size><!-- 773 252 -->
-         <selectorHeight>0.00208333</selectorHeight><!-- 1 -->
-         <selectorVerticalOffset>0.042</selectorVerticalOffset>
-         <fontSize>0.03333333</fontSize><!-- 16 -->
-         <lineSpacing>1.75</lineSpacing>
-         <horizontalMargin>0.02344666</horizontalMargin><!-- 20 -->
-      </textlist>
       <image name="helpsystem-outer-border">
          <path>./_inc/images/16-9/helpsystem-outer-border.svg</path>
       </image>
@@ -50,28 +44,61 @@ based on 853x480
       <image name="helpsystem-background">
          <path>./_inc/images/16-9/helpsystem-background.svg</path>
       </image>
+      <!-- Text -->
+      <text name="viewname" extra="true">
+         <x>0.0996483</x><!-- 85 -->
+      </text>
+      <!-- Help -->
       <helpsystem name="help">
-         <fontSize>0.025</fontSize><!-- 12 -->
-         <entrySpacing>0.01172333</entrySpacing><!-- 10 -->
-         <iconTextSpacing>0.00468933</iconTextSpacing><!-- 4 -->
+         <fontSize>0.033333333333333</fontSize><!-- 16 -->
       </helpsystem>
    </view>
 
-   <!-- Variants: List + Cover -->
-   <variant name="gamelist-list-cover">
-      <view name="gamelist">
-         <textlist name="textlist">
-            <size>0.58499414 0.525</size><!-- 499 252 -->
-         </textlist>
-         <image name="game-art-background">
-            <pos>0.79249707 0.48125</pos><!-- 676 231 -->
-            <size>0.32121923 0.52916667</size><!-- 274 254 -->
-         </image>
-         <video name="game-art">
-            <pos>0.8042204 0.48125</pos><!-- 686 231 -->
-            <maxSize>0.27432591 0.52916667</maxSize><!-- 234 254 -->
-         </video>
-      </view>
-   </variant>
+   <!--
+   ///
+   System View
+   ///
+   -->
+   <view name="system">
+      <textlist name="textlist">
+         <x>0.04689332</x><!-- 40 -->
+         <w>0.90621336</w><!-- 773 -->
+      </textlist>
+   </view>
+
+   <!--
+   ///
+   Gamelist View
+   ///
+   -->
+   <view name="basic,detailed">
+      <textlist name="gamelist">
+         <x>0.04689332</x><!-- 40 -->
+         <w>0.90621336</w><!-- 773 -->
+      </textlist>
+   </view>
+
+   <!--
+   ///
+   View: Gamelist (Game Artwork: Image, Boxart, Logo)
+   ///
+   -->
+   <view name="detailed" ifSubset="gamelist-view-artwork:image|boxart|logo">
+      <textlist name="gamelist">
+         <w>0.58499414</w><!-- 499 -->
+      </textlist>
+      <image name="game-art-background" extra="true">
+         <pos>0.79249707 0.48125</pos><!-- 676 231 -->
+         <size>0.32121923 0.52916667</size><!-- 274 254 -->
+      </image>
+      <image name="game-artwork" extra="true">
+         <pos>0.8042204 0.48125</pos><!-- 686 231 -->
+         <maxSize>0.27432591 0.52916667</maxSize><!-- 234 254 -->
+      </image>
+      <video name="game-video" extra="true">
+         <pos>0.8042204 0.48125</pos><!-- 686 231 -->
+         <minSize>0.27432591 0.52916667</minSize><!-- 234 254 -->
+      </video>
+   </view>
 
 </theme>

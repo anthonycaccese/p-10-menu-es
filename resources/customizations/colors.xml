@@ -24,6 +24,6 @@
       <menuBackgroundColor>111111</menuBackgroundColor>
       <menuSelectorColor>444444</menuSelectorColor>
       <!-- System Indicators -->
-      <systemIndicatorColor>ffffffcc</systemIndicatorColor>
+      <systemIndicatorColor>ffffffee</systemIndicatorColor>
    </variables>
 </theme>
