@@ -54,7 +54,7 @@ Options:
 - `Boxart`
 - `Logo`
 
-| Off | Image |
+| Off | Boxart |
 |----|----|
 | ![Game Artwork Off](https://github.com/user-attachments/assets/d22089b3-9f37-487c-bfec-e542ed2ca535) | ![Game Artwork Image](https://github.com/user-attachments/assets/319454f6-fde1-4996-a5fc-4ff2de3c3d30) |
 
