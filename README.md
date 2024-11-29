@@ -1,8 +1,6 @@
 # P-10 Menu for EmulationStation
 
-This is a tranlation of the Playchoice-10 menu interface for the version of EmulationStation used in [Batocera (v40 and above)](https://batocera.org/).
-
-This version of the theme only works with distributions that use the latest Batocera (v40 and above) fork of EmulationStation.  Specifically [Batocera](https://batocera.org/), [Knulli](https://www.knulli.org/), [RockNIX](https://rocknix.org/) and [RetroBat](https://www.retrobat.org/)
+This is a tranlation of the Playchoice-10 menu interface for distributions that use this fork of [EmulationStation](https://github.com/batocera-linux/batocera-emulationstation).  Specifically [Batocera](https://batocera.org/) (v40 and above), [Knulli](https://www.knulli.org/), [RockNIX](https://rocknix.org/) and [RetroBat](https://www.retrobat.org/)
 
 My work focused on tranlating the layout so that it could be buildable in the theme engine for EmulationStation.  Please refer to the `Changes Made` section below for additional details.
 
