@@ -76,12 +76,13 @@ https://github.com/anthonycaccese/p-10-menu-es
       <include name="light-blue" displayName="Light Blue" />
       <include name="capcom-purple" displayName="Capcom Purple" />
       <include name="dark-tan" displayName="Dark Tan" />
+      <include name="knulli" displayName="Knulli" />
       <include name="oled" displayName="OLED" />
       <include name="light" displayName="Light" />
       <include name="custom" displayName="Custom" />
    </subset>
-   <include>./colors.xml</include>
    <include ifSubset="color-scheme:custom">${themeCustomizationsPath}colors.xml</include>
+   <include>./colors.xml</include>
 
    <!--
    ///

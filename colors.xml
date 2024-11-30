@@ -1,31 +1,5 @@
 <theme>
    <formatVersion>7</formatVersion>
-   <variables ifSubset="color-scheme:playchoice|custom">
-      <backgroundColor>000000</backgroundColor>
-      <!-- View Name -->
-      <viewnameBorderColor>000000</viewnameBorderColor>
-      <viewnameBackgroundColor>f10000</viewnameBackgroundColor>
-      <viewnameTextColor>ffffff</viewnameTextColor>
-      <!-- Text List -->
-      <textlistOuterBorderColor>ffffff</textlistOuterBorderColor>
-      <textlistInnerBorderColor>156415</textlistInnerBorderColor>
-      <textlistBackgroundColor>7a9f35</textlistBackgroundColor>
-      <textlistSelectedColor>ffffff</textlistSelectedColor>
-      <textlistSelectorColor>ffffff55</textlistSelectorColor>
-      <textlistPrimaryColor>000000</textlistPrimaryColor>
-      <textlistBackgroundLinesColor>15641577</textlistBackgroundLinesColor>
-      <!-- Help System -->
-      <helpsystemOuterBorderColor>ffffff</helpsystemOuterBorderColor>
-      <helpsystemInnerBorderColor>002d00</helpsystemInnerBorderColor>
-      <helpsystemBackgroundColor>156415</helpsystemBackgroundColor>
-      <helpsystemIconColor>fffe8f</helpsystemIconColor>
-      <helpsystemTextColor>ffffff</helpsystemTextColor>
-      <!-- Menu -->
-      <menuBackgroundColor>111111</menuBackgroundColor>
-      <menuSelectorColor>444444</menuSelectorColor>
-      <!-- System Indicators -->
-      <systemIndicatorColor>ffffffee</systemIndicatorColor>
-   </variables>
    <variables ifSubset="color-scheme:light-blue">
       <backgroundColor>000000</backgroundColor>
       <!-- View Name -->
@@ -49,6 +23,11 @@
       <!-- Menu -->
       <menuBackgroundColor>111111</menuBackgroundColor>
       <menuSelectorColor>444444</menuSelectorColor>
+      <!-- Splash -->
+      <splashBackgroundColor>021c32</splashBackgroundColor>
+      <splashTextColor>ffffff</splashTextColor>
+      <splashProgressBarColor>56AAF8</splashProgressBarColor>
+      <splashProgressBarActiveColor>EA3352</splashProgressBarActiveColor>
       <!-- System Indicators -->
       <systemIndicatorColor>ffffffee</systemIndicatorColor>
    </variables>
@@ -75,6 +54,11 @@
       <!-- Menu -->
       <menuBackgroundColor>111111</menuBackgroundColor>
       <menuSelectorColor>444444</menuSelectorColor>
+      <!-- Splash -->
+      <splashBackgroundColor>3C1287</splashBackgroundColor>
+      <splashTextColor>ffffff</splashTextColor>
+      <splashProgressBarColor>a278ed</splashProgressBarColor>
+      <splashProgressBarActiveColor>fd5258</splashProgressBarActiveColor>
       <!-- System Indicators -->
       <systemIndicatorColor>ffffffee</systemIndicatorColor>
    </variables>
@@ -101,8 +85,44 @@
       <!-- Menu -->
       <menuBackgroundColor>111111</menuBackgroundColor>
       <menuSelectorColor>444444</menuSelectorColor>
+      <!-- Splash -->
+      <splashBackgroundColor>1c1a18</splashBackgroundColor>
+      <splashTextColor>ffffff</splashTextColor>
+      <splashProgressBarColor>5E5750</splashProgressBarColor>
+      <splashProgressBarActiveColor>F2A73B</splashProgressBarActiveColor>
       <!-- System Indicators -->
       <systemIndicatorColor>ffffff99</systemIndicatorColor>
+   </variables>
+   <variables ifSubset="color-scheme:knulli">
+      <backgroundColor>000000</backgroundColor>
+      <!-- View Name -->
+      <viewnameBorderColor>000000</viewnameBorderColor>
+      <viewnameBackgroundColor>4F5C18</viewnameBackgroundColor>
+      <viewnameTextColor>ffffff</viewnameTextColor>
+      <!-- Text List -->
+      <textlistOuterBorderColor>2f370e</textlistOuterBorderColor>
+      <textlistInnerBorderColor>000000</textlistInnerBorderColor>
+      <textlistBackgroundColor>0e0e0e</textlistBackgroundColor>
+      <textlistSelectedColor>ffffff</textlistSelectedColor>
+      <textlistSelectorColor>afb640</textlistSelectorColor>
+      <textlistPrimaryColor>ffffff33</textlistPrimaryColor>
+      <textlistBackgroundLinesColor>C9CE7422</textlistBackgroundLinesColor>
+      <!-- Help System -->
+      <helpsystemOuterBorderColor>2f370e</helpsystemOuterBorderColor>
+      <helpsystemInnerBorderColor>000000</helpsystemInnerBorderColor>
+      <helpsystemBackgroundColor>0e0e0e</helpsystemBackgroundColor>
+      <helpsystemIconColor>C9CE74</helpsystemIconColor>
+      <helpsystemTextColor>ffffff99</helpsystemTextColor>
+      <!-- Menu -->
+      <menuBackgroundColor>111111</menuBackgroundColor>
+      <menuSelectorColor>4F5C18</menuSelectorColor>
+      <!-- Splash -->
+      <splashBackgroundColor>0e0e0e</splashBackgroundColor>
+      <splashTextColor>ffffff</splashTextColor>
+      <splashProgressBarColor>2f370e</splashProgressBarColor>
+      <splashProgressBarActiveColor>4F5C18</splashProgressBarActiveColor>
+      <!-- System Indicators -->
+      <systemIndicatorColor>d8db9a</systemIndicatorColor>
    </variables>
    <variables ifSubset="color-scheme:oled">
       <backgroundColor>000000</backgroundColor>
@@ -127,6 +147,11 @@
       <!-- Menu -->
       <menuBackgroundColor>111111</menuBackgroundColor>
       <menuSelectorColor>444444</menuSelectorColor>
+      <!-- Splash -->
+      <splashBackgroundColor>000000</splashBackgroundColor>
+      <splashTextColor>ffffff</splashTextColor>
+      <splashProgressBarColor>222222</splashProgressBarColor>
+      <splashProgressBarActiveColor>333333</splashProgressBarActiveColor>
       <!-- System Indicators -->
       <systemIndicatorColor>ffffff99</systemIndicatorColor>
    </variables>
@@ -154,7 +179,43 @@
       <!-- Menu -->
       <menuBackgroundColor>111111</menuBackgroundColor>
       <menuSelectorColor>444444</menuSelectorColor>
+      <!-- Splash -->
+      <splashBackgroundColor>dddddd</splashBackgroundColor>
+      <splashTextColor>000000</splashTextColor>
+      <splashProgressBarColor>222222</splashProgressBarColor>
+      <splashProgressBarActiveColor>333333</splashProgressBarActiveColor>
       <!-- System Indicators -->
       <systemIndicatorColor>00000099</systemIndicatorColor>
+   </variables>
+   <variables ifSubset="color-scheme:playchoice">
+      <backgroundColor>000000</backgroundColor>
+      <!-- View Name -->
+      <viewnameBorderColor>000000</viewnameBorderColor>
+      <viewnameBackgroundColor>f10000</viewnameBackgroundColor>
+      <viewnameTextColor>ffffff</viewnameTextColor>
+      <!-- Text List -->
+      <textlistOuterBorderColor>ffffff</textlistOuterBorderColor>
+      <textlistInnerBorderColor>156415</textlistInnerBorderColor>
+      <textlistBackgroundColor>7a9f35</textlistBackgroundColor>
+      <textlistSelectedColor>ffffff</textlistSelectedColor>
+      <textlistSelectorColor>ffffff55</textlistSelectorColor>
+      <textlistPrimaryColor>000000</textlistPrimaryColor>
+      <textlistBackgroundLinesColor>15641577</textlistBackgroundLinesColor>
+      <!-- Help System -->
+      <helpsystemOuterBorderColor>ffffff</helpsystemOuterBorderColor>
+      <helpsystemInnerBorderColor>002d00</helpsystemInnerBorderColor>
+      <helpsystemBackgroundColor>156415</helpsystemBackgroundColor>
+      <helpsystemIconColor>fffe8f</helpsystemIconColor>
+      <helpsystemTextColor>ffffff</helpsystemTextColor>
+      <!-- Menu -->
+      <menuBackgroundColor>111111</menuBackgroundColor>
+      <menuSelectorColor>444444</menuSelectorColor>
+      <!-- Splash -->
+      <splashBackgroundColor>001200</splashBackgroundColor>
+      <splashTextColor>ffffff</splashTextColor>
+      <splashProgressBarColor>002d00</splashProgressBarColor>
+      <splashProgressBarActiveColor>7a9f35</splashProgressBarActiveColor>
+      <!-- System Indicators -->
+      <systemIndicatorColor>ffffffee</systemIndicatorColor>
    </variables>
 </theme>
